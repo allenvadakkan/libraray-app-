@@ -90,16 +90,16 @@
           
           
           <!--/stories-->
-          <%for(i=0;i<authors.length;i++){%>
+          <%for(i=0;i<book_catalogue.length;i++){%>
             <div class="row">    
                 <br>
                 <div class="col-md-2 col-sm-3 text-center">
-                <a class="story-title" href="#"><img alt="" src="./images/<%= authors[i].author_image%>" style="width:auto;height:150px"></a>
+                <a class="story-title" href="#"><img alt="" src="./images/<%= book_catalogue[i].author_image%>" style="width:auto;height:150px"></a>
                 </div>
                 <div class="col-md-10 col-sm-9">
-                <h3><%= authors[i].author%></h3>
+                <h3><%= book_catalogue[i].author%></h3>
                 <br>
-                <a href="/authors/<%=i%>" class="text-muted" style="color:blue">About Author</a>
+                <a href="/authors/<%=book_catalogue[i]._id%>" class="text-muted" style="color:blue">About Author</a>
                 <br><br>
                 </div>
             </div>
