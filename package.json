@@ -4,6 +4,7 @@
   "description": "A simple app to manage library books.",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shinu Shaju",

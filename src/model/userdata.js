@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://userone:<password>@ictakfiles.old1v.mongodb.net/<dbname>?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://userone:userone@ictakfiles.old1v.mongodb.net/library?retryWrites=true&w=majority');
 
 const Schema=mongoose.Schema;
 

@@ -1,5 +1,5 @@
 const express = require('express')
-
+const port= process.env.port || 5070;
 const nav1 = [
     {
         link:'./adminbooks', name:'Books'
@@ -11,7 +11,7 @@ const nav1 = [
         link:'./admin', name:'Add book'
     },
     {
-        link:'./', name:'Logout'
+        link:'./", name:'Logout'
     },
 ];
 
@@ -64,4 +64,4 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen(5070);
+app.listen(port,()=>{console.log("Server Ready at" + port)});
