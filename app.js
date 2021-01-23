@@ -1,5 +1,5 @@
 const express = require('express')
-const port= process.env.port || 5070;
+const port= process.env.PORT || 5070;
 const nav1 = [
     {
         link:'./adminbooks', name:'Books'
