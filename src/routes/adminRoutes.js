@@ -1,4 +1,5 @@
 const express=require('express');
+
 const adminRouter=express.Router();
 const bookdata=require('../model/Bookdata'); // to access bookdata
 
@@ -9,6 +10,7 @@ function router(nav){
             title:'library'
         })
     });
+
     adminRouter.post('/add',function(req,res){
         var item={
             title:req.body.title,

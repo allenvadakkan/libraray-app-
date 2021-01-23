@@ -91,13 +91,16 @@
           
           <!--/stories-->
             <div class="row">    
-                <form method ="GET" action="/signin">
-                    Name: <br><input type="text" name='Name'><br><br>
-                    Phone number: <br><input type="text" name='Phonenumber'><br><br>
-                    Email: <br><input type="text" name='email'><br><br>
-                    Password: <br><input type="password" name='password'><br><br>
-                    Confirm Password: <br><input type="password" name='cpassword'><br><br>
-                    Image: <br><input type="file" name='image'><br><br>
+                <form method ="POST" action="/signup/success">
+                    Name: <br><input type="text" name='name' required><br><br>
+                    Email: <br><input type="email" name='email'required><br><br>
+                    Phone number: <br><input type="text" name='Phonenumber' required><br><br>
+                    Password: <br><input type="password" name='password' required><br><br>
+                    Confirm Password: <br><input type="password" name='cpassword' required><br><br>
+                    
+
+    
+
                     <button type="submit">Add</button>
                 </form>
             </div>

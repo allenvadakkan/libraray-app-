@@ -8,9 +8,19 @@ function router(nav){
             title:'library'
         })
     })
-    signin.get('/success',function(req,res){
-        res.send("sucessfull");
+    signin.post('/',function(req,res){
+        res.render('signin',{
+            nav,
+            title:'library'
+        })
     })
+    signin.get('/success',function(req,res){
+        res.render('addbook',{
+            nav,
+            title:'library'
+        })
+    })
+
     return signin;
 }
 
