@@ -11,7 +11,7 @@ const nav1 = [
         link:'./admin', name:'Add book'
     },
     {
-        link:'./", name:'Logout'
+        link:'./', name:'Logout'
     },
 ];
 
